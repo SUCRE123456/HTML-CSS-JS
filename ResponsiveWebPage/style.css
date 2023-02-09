@@ -1,0 +1,72 @@
+/*pixaBay , google Font */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+h1, p{
+    margin: 0;
+}
+/* 위에 작업 (초기화) 필요 */
+
+a{
+    color: inherit;
+    text-decoration: none;
+    /* 상위 태그 글색깔 상속/ 밑줄 제거, 데코제거. */
+}
+
+#main{
+    background: url(whiteSand.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Questrial', sans-serif;
+    /* 구글폰트에서 복붙하기. */
+    
+}
+
+#contents{
+    /* color: rgb(13, 51, 102); */
+    color: black;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    /* 정중앙에 위치시키기 위한 기본 작업임. */
+}
+
+#contents h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    margin-bottom: 16px;
+}
+#contents p{
+    font-size: 23px;
+    margin-bottom: 16px;
+}
+#contents a{
+    display: inline-block;  /*?? 이거는 뭔가*/
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+#contents a:hover{
+    background-color: rgba(117, 114, 114, 0.788);
+}
+/* 화면 769px 이하로 줄어들경우 다음 적용 */
+@media(max-width:769px){
+    #contents h1{
+        font-size: 50px;
+    }
+    #contents p{
+        font-size: 20px;
+    }
+    #contents a{
+        font-size: 14px;
+    }
+}
